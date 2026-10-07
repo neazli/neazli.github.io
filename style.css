@@ -1,0 +1,109 @@
+/* Renkler */
+:root {
+    --text: #f3ecff;
+    --muted: #c4b2e6;
+    --accent: #d6bcff;
+    --card: rgba(255, 255, 255, 0.08);
+    --line: rgba(255, 255, 255, 0.18);
+  }
+  
+  /* Genel */
+  * { box-sizing: border-box; }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.7;
+    background: linear-gradient(160deg, #1b0f33 0%, #3b1d6e 50%, #7a45d1 100%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  main {
+    flex: 1;
+  }
+  /* Üst kısım */
+  .site-header {
+    text-align: center;
+    padding: 64px 0 32px;
+  }
+  
+  .site-header h1 {
+    margin: 0 0 8px;
+    font-size: 2.6rem;
+  }
+  
+  .site-header p {
+    margin: 0;
+    color: var(--muted);
+  }
+  
+  nav {
+    margin-top: 24px;
+  }
+  
+  nav a {
+    display: inline-block;
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 20px;
+    margin: 0 4px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--card);
+  }
+  
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Bölümler ve yazılar */
+  .section-title {
+    margin: 40px 0 16px;
+    font-size: 1.4rem;
+    color: var(--accent);
+  }
+  
+  .post {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  
+  .post h3 {
+    margin: 0 0 4px;
+    font-size: 1.25rem;
+  }
+  
+  .post time {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  
+  .post p {
+    margin: 12px 0 0;
+  }
+  
+  /* Alt kısım */
+  .site-footer {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+ 
